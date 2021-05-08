@@ -4,13 +4,13 @@ import Chart from 'react-apexcharts';
 import { SaleSum } from 'types/sale';
 import { BASE_URL } from 'utils/requests';
 
-type ChartDada = {
+type ChartData = {
     labels: string[];
     series: number[];
 }
 
 function DonutChart() {
-    const [chartData, setChartData ] = useState<ChartDada>({labels: [], series: []});
+    const [chartData, setChartData ] = useState<ChartData>({labels: [], series: []});
 
     //const mockData = {
     //    series: [477138, 499928, 444867, 220426, 473088],
